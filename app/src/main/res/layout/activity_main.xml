@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/name_text"
+                android:text="@string/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                style="@style/nameStyle" android:textSize="@dimen/text_size"/>
+        <EditText
+                android:id="@+id/nickname_edit"
+                style="@style/nameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/what_is_your_nickname"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+        <Button
+                android:id="@+id/done_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="@string/done"
+                android:layout_gravity="center_horizontal"/>
+        <Button
+                android:text="@string/edit_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginTop="@dimen/layout_margintop"/>
+        <TextView
+                android:id="@+id/nickname_text"
+                style="@style/nameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:visibility="gone"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/star_image"
+                android:layout_marginTop="@dimen/layout_margintop"
+                android:contentDescription="@string/star_image"/>
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp">
+
+            <TextView
+                    android:text="@string/bio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bio_text"
+                    style="@style/nameStyle"/>
+        </ScrollView>
+    </LinearLayout>
+</layout>
