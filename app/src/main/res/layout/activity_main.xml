@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+                name="myName"
+                type="com.handelman.aboutmeappversion2.MyName"/>
+    </data>
+
     <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <TextView
                 android:id="@+id/name_text"
-                android:text="@string/name"
+                android:text="@={myName.name}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -42,6 +48,7 @@
                 style="@style/nameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@={myName.name}"
                 android:textAlignment="center"
                 android:visibility="gone"/>
         <ImageView
@@ -65,5 +72,8 @@
                     android:id="@+id/bio_text"
                     style="@style/nameStyle"/>
         </ScrollView>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/view"/>
     </LinearLayout>
 </layout>

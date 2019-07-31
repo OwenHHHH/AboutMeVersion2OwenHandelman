@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/stripe1"
+            android:layout_weight="0.25"
+            android:background="#E21616"/>
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/stripe2"
+            android:layout_weight="0.25"
+            android:background="#197AC9"/>
+    <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/stripe3"
+            android:layout_weight="0.25"
+            android:background="#4CAF50"/>
+
+</LinearLayout>
